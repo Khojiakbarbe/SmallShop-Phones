@@ -1,0 +1,228 @@
+body{
+    /* background-image: url(img/navbar/1.jpg); */
+    background-size: 100%;
+}
+.myNavbar {
+    padding: 2%  2% ;
+    background-color: rgb(63, 67, 143);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    background-image: url(img/navbar/bg.jpg);
+    border-bottom: 2px dashed gray;
+}
+.shopImg {
+    width: 8rem;
+    height: 5rem;
+    background-image: url(img/navbar/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 2%;
+    border-radius: 15px;
+}
+.navbarColor{
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbarColor:hover{
+    text-decoration: underline ;
+    box-shadow: 0 5px 5px red;
+}
+
+.fixed {
+    position: sticky;
+    left: 95%;
+    top: 50%;
+    /* position: fixed;
+    right: 3%;
+    bottom: 20%; */
+    transform: rotate(270deg);
+    width: 2rem;
+    height:2rem;
+    z-index: 2;
+    font-size: 200%;
+}
+.fixed a{
+    color: coral;
+}
+.fixed:hover{
+    animation-name: myFixed;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+@keyframes myFixed{
+    0%{
+        transform: rotateZ(180deg);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+}
+
+
+/* container start */
+.myContainer{
+
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.label{
+    font-family: 'Courier New', Courier, monospace;
+}
+.label:hover{
+    text-decoration: underline;
+}
+
+.checkboxes{
+    /* background-color: blue; */
+}
+.foo{
+    
+    position: sticky !important;
+    top: 180px;
+
+}
+
+.checkboxRed{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: red;
+    display: inline-block;
+}
+.checkboxBlue{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: blue;
+}
+.checkboxGreen{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: green;
+}
+.checkboxGray{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: gray;
+}
+.checkboxBlack{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: black;
+}
+.checkboxWhite{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.checkboxSilver{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: silver;
+}
+
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+.img{
+    width: 100%;
+    height:  16rem;
+
+}
+.cardShadow{
+    padding: 2%;
+}
+.cardShadow:hover {
+    box-shadow: 5px 10px 10px gray;
+    animation-name: card;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+@keyframes card {
+    0%{
+        box-shadow: 0 2px 2px gray;
+    }
+    50%{
+        box-shadow: 2px 5px 5px gray;
+    }
+    100%{
+        box-shadow: 5px 10px 10px gray;
+    }
+}
+.cardTextDecoration{
+    text-decoration: none;
+    color: black;
+}
+.cardTextDecoration:hover {
+    color: gray;
+}
+
+
+
+
+/*  */
+
+
+/*  */
+.overalGrid{
+    background-color: black;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+.hrefDecoration{
+    text-decoration: none;
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
+}
+.hrefDecoration:hover{
+    color: white;
+}
+
+
+.social{
+    display: inline-block;
+    margin: 1%;
+}
+.social svg{
+    width: 2rem;
+    height: 2rem;
+    color: gray;
+    border-radius: 50%;
+}
+.social svg:hover{
+    animation-name: social;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    color: white;
+    box-shadow: 5px 10px 10px greenyellow;
+}
+@keyframes social{
+    0%{
+        box-shadow: 0 5px 5px red;
+        transform: rotateY(0);
+    }
+    50%{
+        box-shadow: 5px 10px 10px blue;
+        transform: rotateY(180deg);
+    }
+    
+}
